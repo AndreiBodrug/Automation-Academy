@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Homework160424 {
     public static void main(String[] args){
 
-        double a, b, c, greaterNumber;
+        double a, b, c;
         int year;
         double[] arr;
         arr = new double[5];
@@ -26,8 +26,7 @@ public class Homework160424 {
         a = scanner.nextDouble();
         b = scanner.nextDouble();
         c = scanner.nextDouble();
-        greaterNumber = Math.max(a,b);
-        System.out.println("The greatest number from those ones provided above is " + Math.max(greaterNumber,c));
+        System.out.println("The greatest number from those ones provided above is " + Math.max(Math.max(a,b),c));
 
     //Write a Java program that takes a year from the user and prints whether it is a leap year or not
         System.out.println("Please insert any year:");
