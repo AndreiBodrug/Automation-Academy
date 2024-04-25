@@ -28,7 +28,7 @@ public class Homework230424 {
     static void palindromeCheck(String text){
         StringBuffer textReverse = new StringBuffer(text);
 
-        if(textReverse.reverse().toString().equals(text)){
+        if(textReverse.reverse().toString().toLowerCase().equals(text.toLowerCase())){
             System.out.println("You got it! Your text is palindrome.");
         }else System.out.println("Your text is not palindrome");
     }
@@ -50,7 +50,6 @@ public class Homework230424 {
         scanner.nextLine();
         text = scanner.nextLine();
         palindromeCheck(text);
-
     }
 }
 
